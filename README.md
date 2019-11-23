@@ -1,2 +1,2 @@
 # Learning-App
-Learning App
+Learning App that helps you
