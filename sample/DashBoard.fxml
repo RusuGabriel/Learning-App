@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DashboardController">
+   <left>
+      <VBox prefHeight="800.0" prefWidth="240.0" style="-fx-background-color: e5ae72;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../resources/user.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox id="dashboard_btn" onMouseClicked="#goToMessages" prefHeight="100.0" prefWidth="200.0" stylesheets="@../resources/btn_style.css">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="12.5" left="28.0" right="12.5" top="25.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../resources/mesaje.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Mesaje">
+                     <HBox.margin>
+                        <Insets left="20.0" top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox id="dashboard_btn" onMouseClicked="#goToCourses" prefHeight="100.0" prefWidth="200.0" stylesheets="@../resources/btn_style.css">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="12.5" left="30.0" right="12.5" top="25.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../resources/cursuri.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Cursuri">
+                     <HBox.margin>
+                        <Insets left="20.0" top="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox id="dashboard_btn" onMouseClicked="#goToContact" prefHeight="100.0" prefWidth="200.0" stylesheets="@../resources/btn_style.css">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="12.5" left="36.0" right="12.5" top="25.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../resources/contact.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Contact">
+                     <HBox.margin>
+                        <Insets left="20.0" top="35.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox id="dashboard_btn" onMouseClicked="#goToSettings" prefHeight="100.0" prefWidth="200.0" stylesheets="@../resources/btn_style.css">
+               <children>
+                  <ImageView fitHeight="50.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets bottom="12.5" left="35.0" right="12.5" top="25.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@../resources/setari.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="Setari">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" top="35.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="courseArea" onMouseClicked="#goToMyCourse" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="246.0" prefWidth="1010.0">
+               <children>
+                  <VBox prefHeight="213.0" prefWidth="1011.0">
+                     <children>
+                        <Label fx:id="nameLbl" text="Nume: ">
+                           <font>
+                              <Font name="Bell MT" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="90.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="idLbl" text="Id Utilizator:">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Bell MT" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="pointsLbl" text="Puncte:">
+                           <VBox.margin>
+                              <Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Bell MT" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children></HBox>
+            <HBox prefHeight="93.0" prefWidth="1010.0" style="-fx-background-color: e5ae72;">
+               <children>
+                  <Label text="Nume Curs">
+                     <HBox.margin>
+                        <Insets left="420.0" top="25.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: eaeaea;">
+               <children>
+                  <ImageView fitHeight="78.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/html&amp;css.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="25.0" right="10.0" top="15.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label text="HTML &amp; CSS">
+                     <HBox.margin>
+                        <Insets left="30.0" top="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+      </VBox>
+   </center>
+</BorderPane>
