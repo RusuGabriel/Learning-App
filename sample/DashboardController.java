@@ -23,7 +23,10 @@ public class DashboardController implements Initializable {
     @FXML
     VBox courseArea;
 
+    ArrayList<MyContentPane> chaptersPane = new ArrayList<>();
+
     ArrayList<Chapters> chapters;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -48,6 +51,13 @@ public class DashboardController implements Initializable {
 
     public void goToMyCourse(MouseEvent mouseEvent) {
         chapters = new ArrayList<>();
-        Database.loadChapters(chapters);
+        Database.loadChapters(chapters, 1);
+        if (courseArea.getChildren().size() == 3) {
+            if(chaptersPane.isEmpty())
+            for (Chapters ch : chapters)
+                chaptersPane.add(new MyContentPane(ch.getNumarCapitol(), ch.getNumeCapitol()));
+            courseArea.getChildren().addAll(chaptersPane);
+        }else
+            courseArea.getChildren().removeAll(chaptersPane);
     }
 }
