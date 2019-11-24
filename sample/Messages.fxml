@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MessagesController">
+   <top>
+      <HBox prefHeight="116.0" prefWidth="1250.0" style="-fx-background-color: e5ae6f;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="169.0" onMouseClicked="#goToDashboard" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/Inapoi_arrow.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="15.0" left="35.0" right="15.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="676.0" prefWidth="252.0" style="-fx-background-color: e5ae6f;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox id="dashboard_btn" onMouseClicked="#goToInbox" prefHeight="100.0" prefWidth="200.0" stylesheets="@../resources/btn_style.css">
+               <children>
+                  <Label text="Mesaje Primite" textAlignment="CENTER">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" top="35.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox id="dashboard_btn" onMouseClicked="#goToSentMessages" prefHeight="100.0" prefWidth="200.0" stylesheets="@../resources/btn_style.css">
+               <children>
+                  <Label id="Dashboard_btn" stylesheets="@/resources/btn_style.css" text="Mesaje Trimise">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" top="35.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="49.0" prefWidth="998.0" style="-fx-background-color: ccae8e;">
+               <children>
+                  <Label text="Expeditor">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Subiect">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="300.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label text="Destinatar">
+                     <font>
+                        <Font name="Bell MT" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="350.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox fx:id="displayArea" prefHeight="638.0" prefWidth="998.0" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

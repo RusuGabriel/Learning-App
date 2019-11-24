@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" styleClass="homepagebg" stylesheets="@homepagebg.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomePageController">
+   <children>
+      <ImageView fx:id="idCursuri" fitHeight="150.0" fitWidth="200.0" layoutX="282.0" layoutY="365.0" onMouseClicked="#goToDashboard" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon1_home.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="idSetari" fitHeight="150.0" fitWidth="200.0" layoutX="550.0" layoutY="365.0" onMouseClicked="#goToSettings" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon2_home.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="idContact" fitHeight="150.0" fitWidth="200.0" layoutX="806.0" layoutY="365.0" onMouseClicked="#goToInfo" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="285.0" AnchorPane.leftAnchor="806.0" AnchorPane.rightAnchor="294.0" AnchorPane.topAnchor="365.0">
+         <image>
+            <Image url="@icon3_home.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="idLabelNume" layoutX="560.0" layoutY="240.0" prefHeight="33.0" prefWidth="161.0" text="Ionut" textAlignment="CENTER">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="idLabelPuncte" layoutX="768.0" layoutY="46.0" prefHeight="59.0" prefWidth="91.0" text="30" textAlignment="CENTER">
+         <font>
+            <Font size="41.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

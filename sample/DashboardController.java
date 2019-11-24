@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class DashboardController implements Initializable {
+    public static final String DASHBOARD = "DashBoard.fxml";
+    public static final String DASHBOARD_LOCATION = "DashBoard.fxml";
 
     @FXML
     Label nameLbl;
@@ -24,7 +26,6 @@ public class DashboardController implements Initializable {
     VBox courseArea;
 
     ArrayList<MyContentPane> chaptersPane = new ArrayList<>();
-
     ArrayList<Chapters> chapters;
 
     @Override
@@ -34,19 +35,19 @@ public class DashboardController implements Initializable {
 
 
     public void goToMessages(MouseEvent mouseEvent) {
-        System.out.println("Am plecat!!");
+        Main.load(MessagesController.MESSAGES);
     }
 
     public void goToCourses(MouseEvent mouseEvent) {
-        System.out.println("Mergi la crsuri");
+        Main.load(DASHBOARD);
     }
 
     public void goToContact(MouseEvent mouseEvent) {
-        System.out.println("Mergi la Contacte");
+        Main.load(InfoController.INFO_LOCATION);
     }
 
     public void goToSettings(MouseEvent mouseEvent) {
-        System.out.println("Mergi la Setari");
+        Main.load(SettingsController.SETTINGS_LOCATION);
     }
 
     public void goToMyCourse(MouseEvent mouseEvent) {
@@ -59,5 +60,9 @@ public class DashboardController implements Initializable {
             courseArea.getChildren().addAll(chaptersPane);
         }else
             courseArea.getChildren().removeAll(chaptersPane);
+    }
+
+    public void goBack(MouseEvent mouseEvent) {
+        Main.load(HomePageController.HOMEPAGE_LOCATION);
     }
 }

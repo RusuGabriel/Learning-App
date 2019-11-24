@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" style="-fx-background-color: red;" styleClass="infobg" stylesheets="@infobg.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InfoController">
+   <children>
+      <ImageView fx:id="idImageInfo" fitHeight="150.0" fitWidth="519.0" layoutX="14.0" onMouseClicked="#goBackToHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Inapoi_arrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

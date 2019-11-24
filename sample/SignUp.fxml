@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" styleClass="signupbg" stylesheets="@signupbg.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpController">
+   <children>
+      <TextField fx:id="idNumeS" layoutX="441.0" layoutY="139.0" prefHeight="50.0" prefWidth="563.0" style="-fx-background-radius: 25; -fx-border-radius: 25; -fx-border-width: 2; -fx-border-color: #eaeaea; -fx-background-color: Transparent;">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="idCNPS" layoutX="441.0" layoutY="232.0" prefHeight="50.0" prefWidth="563.0" style="-fx-background-radius: 25; -fx-border-radius: 25; -fx-border-width: 2; -fx-border-color: #eaeaea; -fx-background-color: Transparent;">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="idPassS" layoutX="441.0" layoutY="323.0" prefHeight="50.0" prefWidth="563.0" style="-fx-background-radius: 25; -fx-border-radius: 25; -fx-background-color: Transparent; -fx-border-width: 2; -fx-border-color: #eaeaea;">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="submitBtn" layoutX="788.0" layoutY="612.0" mnemonicParsing="false" onAction="#register" prefHeight="68.0" prefWidth="268.0" style="-fx-background-radius: 25; -fx-border-radius: 25; -fx-border-width: 2; -fx-border-color: #eaeaea; -fx-background-color: Transparent;" text="Înregistrează-te" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="backBtnS" layoutX="184.0" layoutY="612.0" mnemonicParsing="false" onAction="#goBackL" prefHeight="68.0" prefWidth="281.0" style="-fx-background-radius: 25; -fx-border-radius: 25; -fx-border-width: 2; -fx-border-color: #eaeaea; -fx-background-color: Transparent;" text="Înapoi" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Label fx:id="idErrCNP" layoutX="389.0" layoutY="545.0" prefHeight="50.0" prefWidth="503.0" style="-fx-background-color: Transparent; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 2;" text="Label" textFill="#fcfcfc">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="idCheckBoxDa" layoutX="395.0" layoutY="493.0" mnemonicParsing="false" />
+      <RadioButton fx:id="idCheckBoxNu" layoutX="598.0" layoutY="493.0" mnemonicParsing="false" />
+   </children>
+</AnchorPane>

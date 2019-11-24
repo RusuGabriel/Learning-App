@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" styleClass="loginbg" stylesheets="@loginbg.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <TextField fx:id="idCNPTextField" layoutX="405.0" layoutY="382.0" prefHeight="63.0" prefWidth="620.0" promptText="CNP Utilizator..." style="-fx-border-color: #eaeaea; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-width: 2; -fx-background-color: Transparent;">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="idParolaPassField" layoutX="405.0" layoutY="498.0" prefHeight="63.0" prefWidth="620.0" promptText="Parola..." style="-fx-border-color: #eaeaea; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-width: 2; -fx-background-color: Transparent;">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="loginBtn" layoutX="413.0" layoutY="590.0" mnemonicParsing="false" onAction="#logIn" prefHeight="76.0" prefWidth="269.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-background-color: Transparent; -fx-border-width: 2; -fx-border-color: #eaeaea;" text="Intră În Cont" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="newAccBtn" layoutX="756.0" layoutY="590.0" mnemonicParsing="false" onAction="#signUp" prefHeight="76.0" prefWidth="269.0" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2; -fx-border-color: #eaeaea; -fx-background-color: Transparent;" text="Cont Nou" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

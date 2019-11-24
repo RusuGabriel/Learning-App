@@ -1,0 +1,4 @@
+.homepagebg{
+-fx-background-image: url('homepagebg.png');
+-fx-background-size: 100% 100%;
+}

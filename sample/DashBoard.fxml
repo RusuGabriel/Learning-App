@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.media.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
@@ -104,45 +105,48 @@
                   </Label>
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="94.0" fitWidth="187.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Inapoi_arrow.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children></HBox>
          </children>
       </VBox>
    </left>
    <center>
-      <VBox fx:id="courseArea" onMouseClicked="#goToMyCourse" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="courseArea" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
             <HBox prefHeight="246.0" prefWidth="1010.0">
                <children>
-                  <VBox prefHeight="213.0" prefWidth="1011.0">
+                  <VBox prefHeight="246.0" prefWidth="1010.0" style="-fx-background-color: e5ae72;">
                      <children>
-                        <Label fx:id="nameLbl" text="Nume: ">
-                           <font>
-                              <Font name="Bell MT" size="18.0" />
-                           </font>
-                           <VBox.margin>
-                              <Insets left="20.0" top="90.0" />
-                           </VBox.margin>
-                        </Label>
-                        <Label fx:id="idLbl" text="Id Utilizator:">
-                           <VBox.margin>
-                              <Insets left="20.0" top="10.0" />
-                           </VBox.margin>
-                           <font>
-                              <Font name="Bell MT" size="18.0" />
-                           </font>
-                        </Label>
-                        <Label fx:id="pointsLbl" text="Puncte:">
-                           <VBox.margin>
-                              <Insets left="20.0" top="10.0" />
-                           </VBox.margin>
-                           <font>
-                              <Font name="Bell MT" size="18.0" />
-                           </font>
-                        </Label>
+                        <HBox alignment="BOTTOM_LEFT" prefHeight="155.0" prefWidth="1010.0">
+                           <children>
+                              <Label alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" text="Ai ramas la: ">
+                                 <font>
+                                    <Font name="Bell MT" size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label text="--">
+                                 <font>
+                                    <Font name="Bell MT" size="24.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
                      </children>
                   </VBox>
                </children></HBox>
-            <HBox prefHeight="93.0" prefWidth="1010.0" style="-fx-background-color: e5ae72;">
+            <HBox prefHeight="93.0" prefWidth="1010.0" style="-fx-background-color: ccae8e;">
                <children>
                   <Label text="Nume Curs">
                      <HBox.margin>
@@ -153,7 +157,7 @@
                      </font>
                   </Label>
                </children></HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: eaeaea;">
+            <HBox onMouseClicked="#goToMyCourse" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: eaeaea;">
                <children>
                   <ImageView fitHeight="78.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
                      <image>

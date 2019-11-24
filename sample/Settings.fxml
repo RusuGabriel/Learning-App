@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" styleClass="settingsbg" stylesheets="@settingsbg.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SettingsController">
+   <children>
+      <Label fx:id="idLabelNumeS" layoutX="250.0" layoutY="293.0" prefHeight="49.0" prefWidth="247.0" text="Ionut">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Label>
+      <Button fx:id="schPassBtn" layoutX="101.0" layoutY="414.0" mnemonicParsing="false" onAction="#changePwd" prefHeight="38.0" prefWidth="138.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #e5ae72;" text="Schimba parola" />
+      <Button fx:id="afisPassBtn" layoutX="266.0" layoutY="414.0" mnemonicParsing="false" onAction="#showPwd" prefHeight="38.0" prefWidth="138.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #e5ae72;" text="Afiseaza parola" />
+      <TextField fx:id="idTextFieldpwd" layoutX="239.0" layoutY="358.0" prefHeight="31.0" prefWidth="167.0" style="-fx-background-color: Transparent;">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </TextField>
+      <Button fx:id="buyBtn" layoutX="1069.0" layoutY="452.0" mnemonicParsing="false" onAction="#buyStuff" prefHeight="48.0" prefWidth="158.0" style="-fx-background-color: e5ae72; -fx-background-radius: 25; -fx-border-radius: 25;" text="Cumpara" />
+      <Label fx:id="labelPctRamase" layoutX="685.0" layoutY="456.0" prefHeight="48.0" prefWidth="370.0" text="Puncte ramase: ">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="checkBoxBon" layoutX="658.0" layoutY="311.0" mnemonicParsing="false" />
+      <RadioButton fx:id="checkBoxBilet" layoutX="658.0" layoutY="358.0" mnemonicParsing="false" />
+      <Label fx:id="idLabelCumparaturi" layoutX="685.0" layoutY="560.0" prefHeight="38.0" prefWidth="545.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="idBackBtnSet" fitHeight="150.0" fitWidth="358.0" layoutX="9.0" onMouseClicked="#goBackToDashboard" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Inapoi_arrow.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="chitantaBtn" layoutX="1069.0" layoutY="513.0" mnemonicParsing="false" onAction="#elibereazaChitanta" prefHeight="48.0" prefWidth="158.0" style="-fx-background-radius: 25; -fx-border-radius: 25; -fx-background-color: e5ae72;" text="Elibereaza Chitanta" />
+      <Label fx:id="idLabelDC" layoutX="685.0" layoutY="589.0" prefHeight="38.0" prefWidth="158.0" text="Date Codificate" />
+      <Label fx:id="idLabelDC2" layoutX="685.0" layoutY="645.0" prefHeight="141.0" prefWidth="217.0" />
+      <Label fx:id="idLabelDD" layoutX="911.0" layoutY="589.0" prefHeight="38.0" prefWidth="158.0" text="Date Decodificate" />
+      <Label fx:id="idLabelDD2" layoutX="911.0" layoutY="651.0" prefHeight="141.0" prefWidth="217.0" />
+   </children>
+</AnchorPane>

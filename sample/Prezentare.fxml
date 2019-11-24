@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" style="-fx-background-color: blue;" styleClass="bodybg" stylesheets="@bg.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PrezentareController">
+   <children>
+      <Label fx:id="idLabelContinut" layoutX="90.0" layoutY="242.0" prefHeight="351.0" prefWidth="1072.0" text="Aici va fi continutul " textFill="WHITE">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="idLabelTitlu" layoutX="117.0" layoutY="41.0" prefHeight="70.0" prefWidth="952.0" text="Titlu Capitol" textFill="#ff00bf">
+         <font>
+            <Font size="74.0" />
+         </font>
+      </Label>
+      <Button fx:id="askBtn" layoutX="921.0" layoutY="666.0" mnemonicParsing="false" onAction="#sendQuestion" prefHeight="35.0" prefWidth="168.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #e5ae72;" text="Intreaba un mentor" />
+      <Button fx:id="quizBtn" layoutX="41.0" layoutY="666.0" mnemonicParsing="false" onAction="#goToQuiz" prefHeight="86.0" prefWidth="340.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #e5ae72;" text="Treci la Intrebare" textFill="#171717">
+         <font>
+            <Font size="30.0" />
+         </font></Button>
+      <TextField fx:id="questionTextField" layoutX="804.0" layoutY="709.0" prefHeight="43.0" prefWidth="403.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
+      <ImageView fitHeight="150.0" fitWidth="900.0" layoutX="41.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@titlu.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="447.0" fitWidth="1208.0" layoutX="43.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cuprins.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
