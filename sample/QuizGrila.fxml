@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1250.0" styleClass="bodybg" stylesheets="@bg.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.QuizGrilaController">
+   <children>
+      <Label fx:id="idLabelQuizGrila" layoutX="67.0" layoutY="52.0" prefHeight="227.0" prefWidth="1096.0" text="Intrebare" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="varBtn1" layoutX="67.0" layoutY="356.0" mnemonicParsing="false" text="Varianta 1 de raspuns" textFill="#eeeeee">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="varBtn2" layoutX="67.0" layoutY="421.0" mnemonicParsing="false" text="Varianta 2 de raspuns" textFill="#fcfcfc">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="varBtn3" layoutX="67.0" layoutY="482.0" mnemonicParsing="false" text="Varianta 3 de raspuns" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="varBtn4" layoutX="67.0" layoutY="546.0" mnemonicParsing="false" text="Varianta 4 de raspuns" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="idnextQuizGBtn" layoutX="943.0" layoutY="659.0" mnemonicParsing="false" onAction="#goNextQuizG" prefHeight="82.0" prefWidth="226.0" style="-fx-background-color: #e5ae72; -fx-background-radius: 20; -fx-border-radius: 20;" text="Urmatoarea intrebare">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

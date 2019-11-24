@@ -10,12 +10,12 @@
    <children>
       <Label fx:id="idLabelContinut" layoutX="90.0" layoutY="242.0" prefHeight="351.0" prefWidth="1072.0" text="Aici va fi continutul " textFill="WHITE">
          <font>
-            <Font size="33.0" />
+            <Font size="20.0" />
          </font>
       </Label>
-      <Label fx:id="idLabelTitlu" layoutX="117.0" layoutY="41.0" prefHeight="70.0" prefWidth="952.0" text="Titlu Capitol" textFill="#ff00bf">
+      <Label fx:id="idLabelTitlu" layoutX="81.0" layoutY="61.0" prefHeight="70.0" prefWidth="952.0" text="Titlu Capitol" textFill="#ebb200">
          <font>
-            <Font size="74.0" />
+            <Font size="47.0" />
          </font>
       </Label>
       <Button fx:id="askBtn" layoutX="921.0" layoutY="666.0" mnemonicParsing="false" onAction="#sendQuestion" prefHeight="35.0" prefWidth="168.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-background-color: #e5ae72;" text="Intreaba un mentor" />
@@ -24,7 +24,7 @@
             <Font size="30.0" />
          </font></Button>
       <TextField fx:id="questionTextField" layoutX="804.0" layoutY="709.0" prefHeight="43.0" prefWidth="403.0" style="-fx-background-radius: 20; -fx-border-radius: 20;" />
-      <ImageView fitHeight="150.0" fitWidth="900.0" layoutX="41.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="900.0" layoutX="29.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@titlu.png" />
          </image>
@@ -34,5 +34,6 @@
             <Image url="@cuprins.png" />
          </image>
       </ImageView>
+      <Button fx:id="idBackCursuriBtn" layoutX="957.0" layoutY="45.0" mnemonicParsing="false" onAction="#goBackToCursuri" prefHeight="94.0" prefWidth="244.0" style="-fx-background-color: #e5ae72; -fx-background-radius: 20;" text="Inapoi La Cursuri" />
    </children>
 </AnchorPane>

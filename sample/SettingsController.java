@@ -38,6 +38,7 @@ public class SettingsController implements Initializable {
         ToggleGroup group = new ToggleGroup();
         group.getToggles().add(checkBoxBilet);
         group.getToggles().add(checkBoxBon);
+        idLabelNumeS.setText(Database.getNume(LoginController.USER_CNP));
     }
 
     @FXML

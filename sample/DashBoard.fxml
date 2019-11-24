@@ -128,12 +128,12 @@
                      <children>
                         <HBox alignment="BOTTOM_LEFT" prefHeight="155.0" prefWidth="1010.0">
                            <children>
-                              <Label alignment="BOTTOM_LEFT" contentDisplay="BOTTOM" text="Ai ramas la: ">
+                              <Label alignment="BOTTOM_LEFT" contentDisplay="BOTTOM">
                                  <font>
                                     <Font name="Bell MT" size="24.0" />
                                  </font>
                               </Label>
-                              <Label text="--">
+                              <Label fx:id="pointsWon">
                                  <font>
                                     <Font name="Bell MT" size="24.0" />
                                  </font>

@@ -24,6 +24,8 @@ public class DashboardController implements Initializable {
     Label idLbl;
     @FXML
     VBox courseArea;
+    @FXML
+    public static Label pointsWon;
 
     ArrayList<MyContentPane> chaptersPane = new ArrayList<>();
     ArrayList<Chapters> chapters;

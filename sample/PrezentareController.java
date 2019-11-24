@@ -2,6 +2,7 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.chart.PieChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -19,6 +20,7 @@ public class PrezentareController implements Initializable {
     @FXML private Button askBtn;
     @FXML private Button quizBtn;
     @FXML private TextField questionTextField;
+    @FXML private Button idBackCursuriBtn;
     public static ArrayList<String> prezentari;
     public static ArrayList<String> intrebari;
     public static ArrayList<String> titluri;
@@ -35,18 +37,9 @@ public class PrezentareController implements Initializable {
         intrebari = new ArrayList<String>();
         titluri = new ArrayList<String>();
         Database.loadPrezentari(prezentari);
-
-        intrebari.add("Fișierul care creează o pagină web nu este altceva decât ______. ");
-        intrebari.add("intrebare 2: ");
-        intrebari.add("intrebare 3: ");
-
-        titluri.add("titlu 1");
-        titluri.add("titlu 2");
-        titluri.add("titlu 3");
-
-        raspunsuri.add("Raspuns 1");
-        raspunsuri.add("Raspuns 2");
-        raspunsuri.add("Raspuns 3");
+        Database.loadIntrebari(intrebari);
+        Database.loadTitluri(titluri);
+        Database.loadRaspunsuri(raspunsuri);
 
         idLabelContinut.setWrapText(true);
         idLabelTitlu.setWrapText(true);
@@ -66,15 +59,18 @@ public class PrezentareController implements Initializable {
 
     public void displayMentorMSG(){
         System.out.println(questionTextField.getText());
+        Database.send(questionTextField.getText(), Database.getInstance().search(LoginController.USER_CNP));
         questionTextField.clear();
         questionTextField.setPromptText("Mesajul tau a fost trimis cu succes!");
-        //TODO
+
     }
 
     public void sendQuestion(){
         displayMentorMSG();
     }
 
-
+    public void goBackToCursuri(){
+        Main.getInstance().loadInterface(DashboardController.DASHBOARD_LOCATION);
+    }
 
 }

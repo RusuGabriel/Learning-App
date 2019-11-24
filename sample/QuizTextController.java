@@ -35,6 +35,11 @@ public class QuizTextController implements Initializable {
     public void goNext(){
         PrezentareController.index++;
         Main.getInstance().loadInterface(PrezentareController.PREZENTARE_LOCATION);
+        if(PrezentareController.index==PrezentareController.intrebari.size()) {
+            PrezentareController.index = 0;
+            Main.load(QuizGrilaController.QUIZGRILA_LOCATION);
+        }
+
     }
 
     @FXML

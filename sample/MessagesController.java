@@ -31,7 +31,7 @@ public class MessagesController implements Initializable {
         if (!inbox.isEmpty())
             displayArea.getChildren().removeAll(inbox);
         inbox = new ArrayList<>();
-        Database.loadMailsIn(inbox, 1, "IDUserS");
+        Database.loadMailsIn(inbox, Database.getInstance().search(LoginController.USER_CNP), "IDUserR");
         displayArea.getChildren().addAll(inbox);
 
     }
@@ -40,7 +40,7 @@ public class MessagesController implements Initializable {
         if (!inbox.isEmpty())
             displayArea.getChildren().removeAll(inbox);
         inbox = new ArrayList<>();
-        Database.loadMailsIn(inbox, 1, "IDUserR");
+        Database.loadMailsIn(inbox, Database.getInstance().search(LoginController.USER_CNP), "IDUserS");
         displayArea.getChildren().addAll(inbox);
     }
 }
