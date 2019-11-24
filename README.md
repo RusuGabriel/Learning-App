@@ -1,2 +1,2 @@
 # Learning-App
-Learning App that helps you
+Learning App that helps you develop some skills
